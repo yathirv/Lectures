@@ -1,26 +1,31 @@
 package lectures;
 
+import java.util.ArrayList;
+
 public class Arrays {
 
 	public static void main(String[] args) {
 		
-		int  [] row = new int[5];
-		row[0] = 1;
-		row[4] = 5;
-
-		int   [] Num = { 1, 2, 3, 4, 5, 6 };
-	
-		Object[] Obj = { 5, 6 , "gowtham" };
-
-		String[] Name = { "swetha", "gowtham", "suriya" };
 		
-        String A[] = new String[10];
+		int   [] Num  = { 1, 2, 3, 4, 5, 6 };
+		Object[] Obj  = { 5, 6 , "gowtham" };
+		String[] Name = { "Apple", "Orange", "Banana" };
+		
+		int row[ ] = new int[5];
+		    row[0] = 1;
+		    row[4] = 5;
+
+        String A[ ] = new String[10];
                A[0] = "Hello";
                A[8] = "Geeks!!!";
         
         
         System.out.println(A.length); // .length // to find array.length
         System.out.println(Obj);     // Only Shows the memory location 
+        
+/*      Enhanced for loop syntax
+        From this array row every time in every iteration
+        one has to be picked out */
 
 		for (int element : row) {
 			System.out.println(element); 
@@ -50,6 +55,15 @@ public class Arrays {
 			}
 
 		}
+		
+		ArrayList<String> a = new ArrayList<>();
+		a.add("Scooby");
+		a.add("Dooby");
+		a.add("Doo !");
+		a.remove(2);
+		
+		System.out.println(a.get(1));
+		System.out.println(a.size()); // .size()
 		
 	}
 }
