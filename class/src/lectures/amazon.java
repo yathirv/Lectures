@@ -102,7 +102,7 @@ public class amazon {
 
 	public static void main(String[] args) throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", "/Users/yathi/Documents/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		String[] buy = {"Cucumber","Beetroot","Brocolli"};
