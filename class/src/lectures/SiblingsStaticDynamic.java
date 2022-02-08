@@ -70,11 +70,14 @@ public class SiblingsStaticDynamic
 		
 		Select dropdown = new Select(staticdropdown);
 		dropdown.selectByIndex(3);
-		System.out.println(dropdown.getFirstSelectedOption().getText());
 		dropdown.selectByVisibleText("AED");
-		System.out.println(dropdown.getFirstSelectedOption().getText());
 		dropdown.selectByValue("INR");
-		System.out.println(dropdown.getFirstSelectedOption().getText());
+		
+		System.out.printf(
+				dropdown.getFirstSelectedOption().getText(),
+				dropdown.getFirstSelectedOption().getText(),
+				dropdown.getFirstSelectedOption().getText());
+		
 		System.out.println(driver.findElement(By.cssSelector("*[value='INR']")).getText());
 
 		// STATIC
