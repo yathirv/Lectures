@@ -1,24 +1,28 @@
 package lectures;
-public class methods {
+public class Methods {
 
 	public static void main(String[] args)
 	{
-		methods m = new methods();
+		Methods m = new Methods();
 		
-		String Scooby = m.getDoo();
-		String Finding = getNemo();
+		String Scooby = m.Doo();
+		String Finding = Nemo();
+		
+		ChildMethod c = new ChildMethod();
+		c.child();
 		
 		System.out.println(Scooby);
 		System.out.println(Finding);
 	}
 	
-	public String getDoo()
+	public String Doo() //Return type is string 
 	{
 		System.out.println("hello world");
 		return "scooby doo";
+		
 	}
 
-	public static String getNemo()
+	public static String Nemo()
 	{
 		System.out.println("bye world");
 		return "finding nemo";
