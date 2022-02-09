@@ -19,7 +19,7 @@ public class FileUpload {
 	public static void main(String[] args) throws InterruptedException, IOException {
 
 		String DownloadPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", "/Users/yathi/Documents/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/chromedriver.exe");
 
 		// chrome configuration
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
@@ -35,7 +35,7 @@ public class FileUpload {
 
 		Thread.sleep(3000);
 
-		Runtime.getRuntime().exec("/Users/ASUS/Documents/file2Upload.exe");
+		Runtime.getRuntime().exec("/Users/file2Upload.exe");
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[class*='medium']")));

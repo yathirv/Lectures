@@ -12,7 +12,7 @@ public class DateSelection {
 	public static void main(String[] args)
 
 	{
-		System.setProperty("webdriver.chrome.driver", "/Users/yathi/Documents/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.path2usa.com/travel-companions");
 		driver.findElement(By.xpath("//input[@id='travel_date']")).click();

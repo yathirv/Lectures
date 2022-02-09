@@ -2,7 +2,7 @@ package lectures;
 
 import java.util.ArrayList;
 
-public class uniqueNumber {
+public class UniNum {
 
 	public static void main(String[] args) {
 		

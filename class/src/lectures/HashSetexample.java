@@ -10,7 +10,9 @@ public class HashSetexample {
 	public static void main(String[] args)
 	{ // TODO Auto-generated method stub
 
-		//HashSet treeset, LinkedHashset implements Set interface //does not accept duplicate values  // There is no guarantee elements stored in sequential order..Random order
+/*		HashSet treeset, LinkedHashset implements Set interface
+		does not accept duplicate values
+		There is no guarantee elements stored in sequential order..Random order */
 
 		HashSet<String> hs= new HashSet<String>();
 		hs.add("USA");

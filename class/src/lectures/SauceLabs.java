@@ -18,7 +18,7 @@ public class SauceLabs {
 
 	public static void main(String[] args) throws MalformedURLException {
 
-		System.setProperty("webdriver.chrome.driver", "/Users/yathi/Documents/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/chromedriver.exe");
 
 		ChromeOptions browserOptions = new ChromeOptions();
 		browserOptions.setPlatformName("Windows 7");

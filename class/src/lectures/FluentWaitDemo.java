@@ -17,12 +17,19 @@ public class FluentWaitDemo {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "/Users/yathi/Documents/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
 		driver.findElement(By.cssSelector("[id='start'] button")).click();
-
+		
+/*		Fluent wait finds the web element and 
+ *         repeately at regular interval of time until
+ *           the timeout or till the object gets found 
+		
+		Web driver wait continuously listen to the Dom
+		   without polling */ 
+		
 		Wait<WebDriver> FluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class);
 
 		FluentWait.until(new Function <WebDriver, WebElement> ()

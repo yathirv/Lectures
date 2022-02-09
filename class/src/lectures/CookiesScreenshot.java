@@ -12,7 +12,7 @@ import org.openqa.selenium.io.FileHandler;
 public class CookiesScreenshot {
 
 	public static void main(String[] args) throws IOException {
-		System.setProperty("webdriver.chrome.driver", "/Users/yathi/Documents/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -20,7 +20,7 @@ public class CookiesScreenshot {
 
 		driver.get("http://youtube.com/");
 		File snap = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(snap, new File("/Users/yathi/Documents/screenshots.png"));
+		FileHandler.copy(snap, new File("/Users/screenshots.png"));
 	}
 
 }

@@ -19,7 +19,7 @@ public class SiblingsStaticDynamic
 		Map<String, Object> prefws = new HashMap<>();
 		prefws.put("profile.default_content_setting_values.notifications", "Add extension");
 		options.setExperimentalOption("prefs", prefws);
-		System.setProperty("webdriver.chrome.driver", "/Users/yathi/Documents/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/chromedriver.exe");
 		WebDriver driver = new ChromeDriver(options);
 
 		// SIBLINGS
